@@ -1,0 +1,17 @@
+n=int(input())#it represents no of rows and columns#2
+m=[]#it represents matrix
+for i in range(0,n):#it represents no of rows,i=2<2
+    l=[]#empty list
+    for j in range(0,n):#it represents no of colums,j=2<2
+        x=int(input())#read a new element
+        l.append(x)
+    m.append(l)
+k=int(input())
+for i in range(0,n):
+    for j in range(0,n):
+        if i+j==n-1:
+            m[i][j]=k
+        else:
+            m[i][j]=0
+for i in m:
+    print(i)
